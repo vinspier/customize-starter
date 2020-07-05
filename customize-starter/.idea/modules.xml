@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/customize-starter.iml" filepath="$PROJECT_DIR$/customize-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ioc/ioc.iml" filepath="$PROJECT_DIR$/../ioc/ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/../web/web.iml" filepath="$PROJECT_DIR$/../web/web.iml" />
     </modules>
   </component>
