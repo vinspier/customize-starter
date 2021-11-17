@@ -1,5 +1,7 @@
 package com.vinspier.spring.start.autoconfigure;
 
+import com.vinspier.spring.start.config.BusinessProperties;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Conditional;
@@ -16,7 +18,8 @@ import org.springframework.context.annotation.Configuration;
  * */
 @Configuration
 @ComponentScan(value = {"com.vinspier.spring.start"})
-@ConditionalOnProperty(prefix = "customize",name = "enable",havingValue = "true")
+@AutoConfigureAfter({BusinessProperties.class})
+@ConditionalOnProperty(prefix = "customize",name = "enable",havingValue = "true",matchIfMissing = true)
 public class CustomizeAutoConfiguration {
 
 }
