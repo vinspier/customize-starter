@@ -4,4 +4,8 @@ spring:
   application:
     name: web-demo
 
+# customize-starter 业务配置
+customize:
+  business:
+    driverClassName: testDriver
 
